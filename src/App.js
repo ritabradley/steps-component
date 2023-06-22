@@ -34,8 +34,12 @@ function App() {
       </div>
 
       <div className='buttons'>
-        <Button onClick={handlePrevious}>Previous</Button>
-        <Button onClick={handleNext}>Next</Button>
+        <Button styleClass={step > 1 ? 'active' : ''} onClick={handlePrevious}>
+          Previous
+        </Button>
+        <Button styleClass={step < stepText.length ? 'active' : ''} onClick={handleNext}>
+          Next
+        </Button>
       </div>
     </div>
   );

@@ -39,7 +39,8 @@ body {
   font-size: 18px;
 }
 
-.numbers .active {
+.numbers .active,
+button.active {
   background-color: #7950f2;
   color: #fff;
 }
