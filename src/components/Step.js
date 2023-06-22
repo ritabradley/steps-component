@@ -1,3 +1,3 @@
-export default function Step({ number }) {
-  return <div>{number}</div>;
+export default function Step({ styleClass, number }) {
+  return <div className={styleClass}>{number}</div>;
 }
