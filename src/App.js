@@ -30,7 +30,7 @@ function App() {
         ))}
       </div>
       <div className='message'>
-        <StepText text='Learn React ⚛️' />
+        <StepText text={stepText[step - 1]} />
       </div>
 
       <div className='buttons'>
