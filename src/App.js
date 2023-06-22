@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Step from './components/Step';
+import StepText from './components/StepText';
+import Button from './components/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='steps'>
+      <div className='numbers'>
+        <Step number={1} />
+        <Step number={2} />
+        <Step number={3} />
+      </div>
+      <div className='message'>
+        <StepText text='Learn React ⚛️' />
+      </div>
+
+      <div className='buttons'>
+        <Button>Previous</Button>
+        <Button>Next</Button>
+      </div>
     </div>
   );
 }
